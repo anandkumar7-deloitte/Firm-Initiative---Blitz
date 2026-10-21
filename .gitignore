@@ -1,0 +1,5 @@
+# Don't accidentally commit a copy with real survey/personal data
+*real*
+*Real*
+.DS_Store
+~$*.xlsx
