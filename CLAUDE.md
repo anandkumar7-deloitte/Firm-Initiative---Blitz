@@ -182,6 +182,16 @@ derivable from Location or any other field; don't try to automate them).
 
 ---
 
+## Git / branch housekeeping
+
+- **Deleting branches (local or remote) must be done manually by the repo owner** (e.g. from GitHub's
+  Branches page, or `git push origin --delete <branch>` from their own machine). The Claude Code cloud
+  environment cannot delete remote branches — the push is rejected/disconnected. Don't retry it; merge
+  into `main`, verify the branch is fully contained (`git merge-base --is-ancestor <branch> main`), and
+  ask the owner to delete it.
+
+---
+
 ## Folder guide
 
 - `samples/weekday/` — reference weekday workbook (real data stripped).
